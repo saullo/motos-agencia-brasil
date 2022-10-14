@@ -2,6 +2,7 @@ version: '3.8'
 services:
   app:
     build: .
+    user: ${UID}
     volumes:
       - ./:/var/www/html/
     environment:
